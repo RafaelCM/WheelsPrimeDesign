@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - WheelsPrime</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/ionicons.min.css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -42,11 +43,58 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - WheelsPrime</p>
-        </footer>
     </div>
+
+        <!-- Start Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer-inner">
+                            <h3><a href="index.html"><img class="img-reponsive imgsize" src="~/Content/imgs/wheelsgray.png" alt=""></a> </h3>
+                            <p>
+                                Ipsum
+                            </p>
+                            <div class="divided-30"></div>
+                            <ul class="social list-inline">
+                                <li><a href="http://fb.com" class="fb"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="#" class="twitter"><i class="ion-social-twitter"></i></a></li>
+                                <li><a href="#" class="in"><i class="ion-social-linkedin"></i></a></li>
+                                <li><a href="#" class="dribbble"><i class="ion-social-dribbble"></i></a></li>
+                            </ul>
+                        </div><!--fotter inner-->
+                    </div>
+
+                    <div class="col-sm-4 margin-bottom-30">
+                        <div class="footer-inner">
+                            <h3>Contact us</h3>
+
+                            <ul class="list-unstyled contact-list">
+                                <li><i class="ion-home"></i> 128, Mahadev nagar , 302021</li>
+                                <li><i class="ion-ios-telephone"></i> 1800 2345 23456</li>
+                                <li><i class="ion-email"></i> Support@codepiple.com</li>
+
+                            </ul>
+                        </div><!--fotter inner-->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer-inner">
+                            <h3>Links</h3>
+                            <ul class="list-unstyled contact-list">
+                                <li class="ion-home"> @Html.ActionLink("Home", "Index", "Home")</li>
+                                <li class="ion-android-car">  @Html.ActionLink("Vehicles", "Index", "Home")</li>
+                                <li class="ion-ios-contact-outline">  @Html.ActionLink("Client Area", "Index", "Home")</li>
+                                <li class="ion-wrench">  @Html.ActionLink("Services", "Index", "Home")</li>
+                                <li class="ion-information-circled">  @Html.ActionLink("About", "Index", "Home")</li>
+                            </ul>
+                        </div>
+                    </div><!--fotter inner-->
+                </div>
+            </div>
+            <hr>
+            <span class="clearfix copyright">&copy; @DateTime.Now.Year. All rights reserved. WheelsPrime</span>
+    </footer>
+    <!-- End Footer -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

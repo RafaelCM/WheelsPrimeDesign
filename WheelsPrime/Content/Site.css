@@ -1,12 +1,12 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -14,4 +14,170 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*---------- Footer ----------*/
+
+#footer{
+    padding: 25px 0;
+    background-color: #1a1a1a;
+    border-top: 5px solid #999;
+}
+#footer .social li{
+    padding: 0px 0px;
+}
+#footer .social li a{
+    border-radius: 2px;
+    -webkit-border-radius: 20px;
+    border: 1px solid #777;
+    padding: 0px;
+}
+#footer .social li a:hover{
+    border-color: transparent;
+}
+.footer-inner h3{
+    margin-bottom: 30px;
+    color:#fff;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    font-family: 'Oswald', sans-serif;
+}
+.footer-inner p{
+    color:#777;
+    font-weight: 400;
+    margin: 0px;
+}
+.copyright{
+    display: block;
+    font-size: 11px;
+    color: #777;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+   
+}
+#footer hr{
+background-image: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.1), transparent);
+background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+border: 0;
+height: 1px;
+margin: 22px 0 22px 0;
+}
+.contact-list li{
+    font-size: 16px;
+    line-height: 30px;
+    color:#777;
+}
+.contact-info{
+    margin-bottom: 40px;
+}
+/*Social*/
+.social{
+    margin: 0;
+    padding: 0;
+}
+.social li{
+    padding: 0px;
+    margin: 0;
+}
+.social li a{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color:#777;
+}
+.social li a.fb:hover{
+    background-color:  #3b5998;
+    color:#fff;
+}
+.social li a.twitter:hover{
+    background-color:  #00aced;
+    color:#fff;
+}
+.social li a.in:hover{
+    background-color:  #0e76a8;
+    color:#fff;
+}
+.social li a.dribbble:hover{
+    background-color:  #ea4c89;
+    color:#fff;
+}
+
+/*------------------------------*/
+
+/*---------- Deviders ----------*/
+
+.divided-10{
+    height: 10px;
+    width:100%;
+}
+.divided-20{
+    height: 20px;
+    width:100%;
+}
+.divided-30{
+    height: 30px;
+    width:100%;
+}
+.divided-40{
+    height: 40px;
+    width:100%;
+}
+.divided-50{
+    height: 50px;
+    width:100%;
+}
+.divided-60{
+    height: 60px;
+    width:100%;
+}
+.divided-70{
+    height: 70px;
+    width:100%;
+}
+.divided-80{
+    height: 80px;
+    width:100%;
+}
+
+/*-----------------------------*/
+
+/*---------- Margins ----------*/
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+.margin-bottom-60{
+    margin-bottom: 60px;
+}
+.imgsize{
+    width: 198px;
+    height: 61px;
+}
+
+/*--------------------------------*/
+
+/*---------- Page Title ----------*/
+
+.page-title{
+    padding: 100px 0;
+    background:url(../images/bread-bg.jpg) no-repeat fixed;
+    background-size: cover;
 }

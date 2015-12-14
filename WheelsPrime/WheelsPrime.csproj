@@ -206,6 +206,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\imgs\header_about.jpg" />
+    <Content Include="Content\imgs\wheelsgray.png" />
+    <Content Include="Content\ionicons.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -213,6 +216,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="fonts\ionicons28b5.eot" />
+    <Content Include="fonts\ionicons28b5.svg" />
+    <Content Include="fonts\ionicons28b5.ttf" />
+    <Content Include="fonts\ionicons28b5.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
