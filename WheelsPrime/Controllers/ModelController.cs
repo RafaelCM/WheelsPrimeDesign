@@ -45,10 +45,15 @@ namespace WheelsPrime.Controllers
         }
 
         // GET: Models/Create
-        public ActionResult Create()
+        public ActionResult CreateForBrand(int? id)
         {
-            PopulateBrandDropDownList();
-            return View();
+            if (id != null)
+            {
+                ViewBag.brandName = db.Brand.FirstOrDefault(b => b.ID == id).Name;
+                ViewBag.brandID = id;
+                return View();
+            }
+            return RedirectToAction("Index");
         }
 
         // POST: Models/Create
@@ -56,14 +61,16 @@ namespace WheelsPrime.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name")] Model model, int? brand)
+        public ActionResult CreateForBrand([Bind(Include = "ID,Name")] Model model, int? brand)
         {
-            if (ModelState.IsValid && brand != null)
+            if (brand != null)
             {
-                if (!String.IsNullOrWhiteSpace(model.Name))
+                var selectedbrand = db.Brand.FirstOrDefault(b => b.ID == brand);
+                ViewBag.brandName = selectedbrand.Name;
+                ViewBag.brandID = brand;
+                if (!String.IsNullOrWhiteSpace(model.Name) && ModelState.IsValid)
                 {
                     db.Model.Add(model);
-                    var selectedbrand = db.Brand.FirstOrDefault(b => b.ID == brand);
                     selectedbrand.Model.Add(model);
                     db.SaveChanges();
                     return RedirectToAction("Index");
@@ -73,15 +80,7 @@ namespace WheelsPrime.Controllers
                     ViewBag.modelnameerror = "Não foi colocado nome para o modelo";
                 }
             }
-            PopulateBrandDropDownList(model.Brand);
             return View(model);
-        }
-
-        // GET: Models/Create
-        public ActionResult Create()
-        {
-            PopulateBrandDropDownList();
-            return View();
         }
 
         // POST: Models/Create
