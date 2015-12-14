@@ -181,3 +181,39 @@ margin: 22px 0 22px 0;
     background:url(../images/bread-bg.jpg) no-repeat fixed;
     background-size: cover;
 }
+/*--------------------------------*/
+
+
+ /*----------Navbar Personalizada----------*/
+
+.imagem {
+    width: 150px; 
+    height: 50px;    
+}
+
+.textonavbar{
+    font-size: 18px;
+}
+
+.navbar-collapse .navbar-nav > li > a:hover {
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+
+/*----------------------------------------*/

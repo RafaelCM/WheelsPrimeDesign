@@ -10,7 +10,71 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <!-- Start Navbar -->
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                        <img src="~/Content/imgs/wheelsblue.png" alt="logo" class="imagem">
+                    </a>
+
+
+
+                </div>
+
+                <div class="navbar-collapse collapse textonavbar" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Veículo<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Marcas", "Index", "Brands")</li>
+                                <li>@Html.ActionLink("Modelos", "Index", "Model")</li>
+                                <li>@Html.ActionLink("Extras", "Index", "VehicleExtras")</li>
+                                <li>@Html.ActionLink("Combustíveis", "Index", "FuelTypes")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Sobre", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contactos", "Contact", "Home")</li>
+                      
+                    </ul>
+                    @*NÂO APAGAR*@
+
+                    @Html.Partial("_LoginPartial")
+                   
+                    
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,7 +104,15 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
+    </div>*@
+
+
+
+
+
+
+
+    <!-- Start Body -->
     <div class="container body-content">
         @RenderBody()
     </div>
@@ -57,7 +129,7 @@
                             </p>
                             <div class="divided-30"></div>
                             <ul class="social list-inline">
-                                <li><a href="http://fb.com" class="fb"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/wikirials/" target="_blank" class="fb"><i class="ion-social-facebook"></i></a></li>
                                 <li><a href="#" class="twitter"><i class="ion-social-twitter"></i></a></li>
                                 <li><a href="#" class="in"><i class="ion-social-linkedin"></i></a></li>
                                 <li><a href="#" class="dribbble"><i class="ion-social-dribbble"></i></a></li>
