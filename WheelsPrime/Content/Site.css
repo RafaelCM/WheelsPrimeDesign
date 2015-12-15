@@ -240,3 +240,51 @@ margin: 22px 0 22px 0;
 }
 
 /*----------------------------------------*/
+
+
+
+/*--------------------Login--------------------*/
+.centro{
+    text-align: center;
+}
+
+@media(min-width:1280px) {
+
+    .textoo {
+        padding-left: 85px;
+    }
+}
+
+@media(min-width:320px) {
+
+    .textoo {
+        margin-top: 10px;
+    }
+}
+
+
+@media(min-width:1280px) {
+
+    .btnlogin {
+        padding-left: 94px;
+    }
+}
+
+
+
+@media(min-width:1280px) {
+
+    .recuperar {
+        padding-left: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------*/
