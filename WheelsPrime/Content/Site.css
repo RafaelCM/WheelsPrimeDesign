@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 0px;
+    padding-top: 61px;
     padding-bottom: 0px;
 }
 
@@ -231,5 +231,12 @@ margin: 22px 0 22px 0;
     }
 }
 
+
+/*----------------------------------------*/
+
+/*----------------Container Para Baixo----------------------*/
+.cima{
+    padding-bottom:20px;
+}
 
 /*----------------------------------------*/
