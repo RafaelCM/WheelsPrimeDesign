@@ -187,8 +187,9 @@ margin: 22px 0 22px 0;
  /*----------Navbar Personalizada----------*/
 
 .imagem {
-    width: 150px; 
-    height: 50px;    
+    width: 120px; 
+    height: 40px;  
+        /*margin-top: 10px;*/  
 }
 
 .textonavbar{
@@ -201,7 +202,7 @@ margin: 22px 0 22px 0;
 }
 
 .navbar-fixed-top .nav {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -212,6 +213,21 @@ margin: 22px 0 22px 0;
 
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
+    }
+}
+
+
+@media(min-width:320px) {
+
+    .imagem {
+        margin-top: 4px;
+    }
+}
+
+@media(min-width:1280px) {
+
+    .imagem {
+        margin-top: 10px;
     }
 }
 
