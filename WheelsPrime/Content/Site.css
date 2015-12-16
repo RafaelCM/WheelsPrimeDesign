@@ -262,29 +262,19 @@ margin: 22px 0 22px 0;
     }
 }
 
-
-@media(min-width:1280px) {
-
-    .btnlogin {
-        padding-left: 94px;
+.btnlogin {
+        padding-left: 88px;
     }
-}
 
-
-
-@media(min-width:1280px) {
-
-    .recuperar {
-        padding-left: 130px;
+ .recuperar {
+        padding-left: 45px;
     }
+
+/*----------------------------------------*/
+
+/*-----------------WellCustom--------------------*/
+.well{
+    margin-bottom: 70px;
+    margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-
 /*----------------------------------------*/
