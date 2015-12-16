@@ -231,7 +231,9 @@ margin: 22px 0 22px 0;
     }
 }
 
-
+.navbar-inverse {
+    background-color: #1a1a1a;
+}
 /*----------------------------------------*/
 
 /*----------------Container Para Baixo----------------------*/
@@ -275,6 +277,6 @@ margin: 22px 0 22px 0;
 /*-----------------WellCustom--------------------*/
 .well{
     margin-bottom: 70px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 /*----------------------------------------*/
