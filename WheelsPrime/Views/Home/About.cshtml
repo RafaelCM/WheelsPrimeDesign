@@ -1,37 +1,43 @@
 ﻿@{
     ViewBag.Title = "About";
 }
+ <div class="row well">
+     
+         <div class="text-center">
+             <div class="col-md-6">
+                 <h3 class="centro">About</h3>
 
-<div class="container well">
+                 <p class="justificar">
+                     A WheelsPrime é uma empresa de excelencia ligada ao sector automovel.
+                     A nossa empresa é um stand com variadissimas marcas de automoveis
+                     ao gosto e tambem necessidade de qualquer cliente. Disponiblizamos o serviço de
+                     oficina, que tem profissionais de excelencia e  prontos sempre para atender há necessidade do cliente.
+                 </p>
+           
 
-    <div>
-        <h3 class="centro">About</h3>
-        
-    </div>
-    
-    <p class="text-center">
-        A WheelsPrime é uma empresa de excelencia ligada ao sector automovel.
-        A nossa empresa é um stand com variadissimas marcas de automoveis 
-         ao gosto e tambem necessidade de qualquer cliente. Disponiblizamos o serviço de 
-         oficina, que tem profissionais de excelencia e  prontos sempre para atender há necessidade do cliente.
-    </p>
-    
-    <p></p>
-    <p class="text-center">
-            Constituição da nossa equipa:<br />
-            António Nunes<br />
-            Daniel Braga<br />
-            Edi Moreira<br />
-            Francisco Pereira<br />
-            João Morgado<br />
-            Rafael Marques<br />
-            Ricardo Marques<br />
-            Tiago Bastos
-    </p>
-    
-                        
+                 @Html.ActionLink("Termos e Condições", "Index", "Brands")
+                 @Html.ActionLink("Termos e Condições de Cookies", "Index", "Brands")
+             </div>
+
+  
+             <div class="col-md-6">
+                 <h3 class="centro">Constituição da equipa</h3>
+
+                 <p class="text-center">
+                      <p>  António Nunes</p>
+                     <p>Daniel Braga</p> 
+                     <p>Edi Moreira</p>
+                     <p>Francisco Pereira</p>
+                     <p>João Morgado</p>
+                     <p>Rafael Marques</p>
+                     <p>Ricardo Marques</p>
+                     <p>Tiago Bastos</p>
+                 </p>
+
+             </div>
 
           
-</div>
 
+         </div>
+     </div>
 
